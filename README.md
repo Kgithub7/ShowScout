@@ -1,0 +1,1 @@
+A responsive React app to search and explore TV shows using public API data.
