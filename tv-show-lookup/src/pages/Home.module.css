@@ -3,7 +3,7 @@
 }
 
 .headerDescription {
-  animation: fadeIn 1s linear;
+  animation: fadeIn 1s linear .2s backwards;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,6 +18,7 @@
 }
 
 .headerImgWrapper {
+  animation: fadeIn 1s linear .4s backwards;
   margin-top: 20px;
   height: 50vh;
   width: 80%;

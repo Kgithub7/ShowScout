@@ -29,7 +29,7 @@ function ShowsSearchBar() {
         }}
         onChange={(event) => setInputValue(event.target.value)}
         placeholder="Enter TV Show Name"
-        defaultValue={params.shows}
+        defaultValue={params.shows.replaceAll("-"," ")}
       />
       <button
         type="submit"

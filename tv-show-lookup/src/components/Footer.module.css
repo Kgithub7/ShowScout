@@ -5,8 +5,6 @@
   justify-content: center;
   align-items: center;
   height: 20vh;
-  position: sticky;
-  bottom: 0;
 }
 
 .footerDescription {

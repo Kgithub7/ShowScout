@@ -1,13 +1,12 @@
-import HomeImg from "../assets/home-image.svg"
-import styles from "./Home.module.css"
+import styles from "./Home.module.css";
+import HomeImg from "../assets/home-image.svg";
 import HomeNav from "../components/HomeNav";
 import HomeSearchBar from "../components/ui/HomeSearchBar";
 
-function Home({inputRef}) {
-    
+function Home() {
   return (
     <>
-      <HomeNav  />
+      <HomeNav />
       <section id={styles.landingPage}>
         <header>
           <div className="row">
@@ -15,7 +14,7 @@ function Home({inputRef}) {
               <h1 className={styles.headerTitle}>
                 Find All Your Favorite Shows
               </h1>
-              <HomeSearchBar inputRef={inputRef} />
+              <HomeSearchBar />
               <div className={styles.headerImgWrapper}>
                 <img src={HomeImg} className={styles.headerImg} alt="" />
               </div>

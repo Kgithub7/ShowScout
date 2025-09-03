@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import baseStyles from "./BaseSearchBar.module.css";
 import styles from "./HomeSearchBar.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router";
 import { useState } from "react";
 
@@ -11,7 +11,7 @@ function HomeSearchBar() {
   function onSearch(event) {
     if (inputValue) {
       event.preventDefault();
-      navigate(`/${inputValue}`);
+      navigate(`/${inputValue.replaceAll(" ","-")}`);
     }
   }
 

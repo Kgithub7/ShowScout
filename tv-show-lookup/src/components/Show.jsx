@@ -11,14 +11,14 @@ function Show({ show }) {
     show.averageRuntime &&
     show.summary &&
     show.image &&
-    show.image.medium
+    show.image.original
   ) {
-    let showImage = show.image.medium;
+    let showImage = show.image.original;
     return (
       <div className={styles.showWrapper}>
         <div className={styles.show}>
           <div className={styles.showDescription}>
-            <h2 className={styles.showName}>{show.name}</h2>
+            <h2 className={styles.showName} title={show.name}>{show.name}</h2>
             <div className={styles.showDetails}>
               <p>
                 Language:{" "}
@@ -55,6 +55,9 @@ function Show({ show }) {
             <Link
               className={styles.showImgLink}
               to={`/${shows}/${show.name.replaceAll(" ", "-")}`}
+              onClick={() => {
+                localStorage.setItem("show", JSON.stringify(show))
+              }}
             >
               More Info
             </Link>

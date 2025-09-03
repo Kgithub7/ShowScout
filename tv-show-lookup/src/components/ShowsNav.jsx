@@ -1,19 +1,21 @@
+import { Link, useNavigate } from "react-router";
 import styles from "./ShowsNav.module.css";
 import baseStyles from "./BaseNav.module.css";
 import NavLogo from "../assets/logo.png";
-import { Link } from "react-router";
 import ShowsSearchBar from "./ui/ShowsSearchBar";
 
 function ShowsNav() {
+  const navigate=useNavigate()
   return (
     <div className={`${styles.navRow} ${styles.navRow}`}>
       <nav className="row">
         <div
-          className={`${baseStyles.navLogoWrapper} ${styles.navLogoWrapper}`}
+          className={styles.navLogoWrapper}
         >
           <img
             className={`${baseStyles.navLogoImg} ${styles.navLogoImg}`}
             src={NavLogo}
+            onClick={()=>navigate("/")}
           />
         </div>
         <ShowsSearchBar />

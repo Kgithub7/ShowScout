@@ -8,8 +8,11 @@
 }
 
 .navLogoWrapper {
-  padding-left: 10px;
+  display: flex;
   width: 20%;
+  min-width: 150px;
+  padding-left: 10px;
+  cursor: pointer;
 }
 
 .navLogoImg {
@@ -40,13 +43,13 @@
 }
 
 @media (max-width: 650px) {
-  .navLink{
-  padding: 8px 12px;
+  .navLink {
+    padding: 8px 12px;
   }
 }
 
 @media (max-width: 450px) {
-  nav{
+  nav {
     justify-content: space-between;
     width: 100%;
   }

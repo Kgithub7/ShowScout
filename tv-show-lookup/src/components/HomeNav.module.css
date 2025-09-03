@@ -2,11 +2,11 @@
   padding: 5vh 0 2vh 0;
   margin-bottom: 28px;
   animation: fadeIn 1s linear;
-  
 }
 
 .navLogoWrapper {
   display: flex;
+  margin: 0 auto;
   width: 30%;
   min-width: 250px;
 }
