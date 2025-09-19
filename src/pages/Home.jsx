@@ -2,8 +2,14 @@ import styles from "./Home.module.css";
 import HomeImg from "../assets/home-image.svg";
 import HomeNav from "../components/HomeNav";
 import HomeSearchBar from "../components/ui/HomeSearchBar";
+import { useEffect } from "react";
 
 function Home() {
+  
+useEffect(() => {
+  window.scrollTo(0,0)
+}, []);
+
   return (
     <>
       <HomeNav />

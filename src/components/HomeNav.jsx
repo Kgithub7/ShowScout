@@ -6,9 +6,7 @@ function HomeNav() {
   return (
     <div className={`row ${styles.navRow}`}>
       <nav>
-        <div
-          className={styles.navLogoWrapper}
-        >
+        <div className={styles.navLogoWrapper}>
           <img className={baseStyles.navLogoImg} src={NavLogo} />
         </div>
       </nav>

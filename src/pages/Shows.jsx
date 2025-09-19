@@ -10,8 +10,8 @@ import notFoundImage from "../assets/not-found.svg";
 function Shows() {
   const [shows, setShows] = useState([]);
   const [loading, setLoading] = useState(true);
-  const showName=useParams().shows.replaceAll("-"," ")
-  
+  const showName = useParams().shows.replaceAll("-", " ");
+
   async function search() {
     const { data } = await axios.get(
       `https://api.tvmaze.com/search/shows?q=${showName}`
@@ -22,6 +22,7 @@ function Shows() {
   }
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     setLoading(true);
     search();
   }, [showName]);
@@ -42,9 +43,9 @@ function Shows() {
             ) : (
               <div className={styles.shows}>
                 {shows.length > 0 ? (
-                  shows.map((showObject, index) => 
+                  shows.map((showObject, index) => (
                     <Show show={showObject} key={index} />
-                  )
+                  ))
                 ) : (
                   <div className={styles.notFound}>
                     <img src={notFoundImage} className={styles.notFoundImg} />

@@ -2,11 +2,16 @@ import styles from "./ShowInfo.module.css";
 import ShowsNav from "../components/ShowsNav";
 import { Link, useParams } from "react-router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect } from "react";
 
 function ShowInfo() {
   const { shows } = useParams();
   const show = JSON.parse(localStorage.getItem("show"));
   const showImage = show.image.original;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   function extractSummary(summaryFromAPI) {
     const summary = document.createElement("div");

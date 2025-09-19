@@ -16,18 +16,19 @@
 }
 
 .footerLogo {
-    display: flex;
-    align-items: center;
-    width: 20%;
-    min-width: 140px;
+  display: flex;
+  align-items: center;
+  width: 20%;
+  min-width: 140px;
 }
 
 .footerLogoImg {
-    filter: invert(0.5);
-    height: 100%;
+  filter: invert(0.5);
+  height: 100%;
+  cursor: pointer;
 }
 
 .footerCopyright {
-    color: gray;
-    font-size: 14px;
+  color: gray;
+  font-size: 14px;
 }

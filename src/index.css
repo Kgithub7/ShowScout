@@ -22,6 +22,7 @@ body {
 
 html {
   overflow-y: visible;
+  scroll-behavior: smooth;
 }
 
 .container {
