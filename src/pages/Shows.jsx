@@ -16,8 +16,17 @@ function Shows() {
     const { data } = await axios.get(
       `https://api.tvmaze.com/search/shows?q=${showName}`
     );
-    const extractShows = data.map((obj) => obj.show);
-    setShows(extractShows);
+    const extractShows = data.map(obj => obj.show);
+    const filterShows = extractShows.filter(
+      show =>
+        show.name &&
+        show.language &&
+        show.averageRuntime &&
+        show.summary &&
+        show.image &&
+        show.image.original
+    );
+    setShows(filterShows);
     setLoading(false);
   }
 

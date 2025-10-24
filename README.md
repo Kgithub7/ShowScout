@@ -2,8 +2,6 @@
 
 ShowScout is a Single-Page Application built with React and Vite that functions as a client for the TVMaze API. It enables users to search for TV shows and view detailed information on these shows. The project is structured with a clear separation of components and pages, featuring reusable UI elements like navigation bars and search bars, and it is styled for a fully responsive layout.
 
-**Live demo:** [ShowScout](https://kgithub7.github.io/ShowScout/#/)
-
 ## Features
 
 * **Homepage:** A clean landing page with a prominent title and  search bar.
